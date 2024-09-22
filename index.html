@@ -1,25 +1,71 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Product Preview Card</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="card">
-        <img src="https://res.cloudinary.com/dsezdaxqy/image/upload/v1726999512/image-product-desktop_run7au.jpg" alt="Product Image" class="product-image">
-        <div class="info">
-            <h6>PERFUME</h6>
-            <h1>Gabrielle Essence Eau De Parfume</h1>
-            <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL
-            </p>
-            <div class="price">
-                <span class="current-price">$149.99</span>
-                <span class="original-price">$9.99</span>
-            </div>
-            <button>Add to Cart</button>
-        </div>
-    </div>
-</body>
-</html>
+body {
+    font-family: ' Helvetica';
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    overflow: hidden;
+    text-align: left;
+    margin: 20px;
+    
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+}
+
+.info {
+    padding: 15px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+h6 {
+    color: #C6C6C6
+}
+
+p {
+    color: #6c757d; 
+}
+
+.price {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 10px 0;
+}
+
+.current-price {
+    font-size: 1.5em;
+    color: #3F8068; 
+    margin-right: 10px;
+}
+
+.original-price {
+    text-decoration: line-through;
+    color: #999;
+}
+
+button {
+    background-color: #3F8068;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1em;
+}
